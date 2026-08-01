@@ -1,0 +1,43 @@
+*{
+    background-color: rgb(50, 185, 138);
+}
+h1{
+    color:rgb(255,255,0);
+}
+p{
+    color:rgb(0,255,0);
+}
+h3{
+    color:#ff6000;
+}
+#new{
+    color:#6560ff;
+}
+#new1{
+    color:#ffff00;
+}
+.Myclass{
+    color:rgb(255,155,15);
+}
+#box{
+    color:rgb(255,255,0);
+    background-color:blue;
+}
+.heading{
+    color:blueviolet;
+}
+button{
+    background-color:green;
+}
+#align{
+    color:#e11191
+}
+#decoration{
+    color: #e11191;
+}
+#weight{
+    color:#8411be
+}
+#family{
+color:red
+}
