@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    <!--forms in html-->
+        <form  method=get action="/action.php" method="post">
+            <fieldset>
+            <legend><h1>Registration  Form</h1></legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name"> 
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="pass" placeholder="Enter Your Password">
+        <br>
+        <br>
+        <label for="usn">USN:</label>
+        <input type="text" id="usn" name="usn" placeholder="Enter Your USN">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email">
+        <br>
+        <br>
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="numb" placeholder="Enter Your Number">
+        <br>
+        <br>
+        <label for="Gender">Male</label>
+        <input type="radio" value="Male" id="male" name="Gender">
+        <label for="Gender">Female</label>
+        <input type="radio" value="Female" id="female" name="Gender">
+        <br>
+        <br>
+        <input type="checkbox" name="year" id="1st Year" value= "1st Year">
+        <label for="year">1st Year</label>
+        <input type="checkbox" name="year" id="2nd Year" value= "2nd Year">
+        <label for="year">2nd Year</label>
+        <input type="checkbox" name="year" id="3rd Year" value= "3rd Year">
+        <label for="year">3rd Year</label>
+        <input type="checkbox" name="year" id="4th Year" value= "4th Year">
+        <label for="year">4th Year</label>
+        <br>
+        <br>
+        <select name="Course" id="course">
+        <option value="CSE" selected>CSE</option>
+        <option value="AI-ML">AI-ML</option>
+        <option value="Data Science">Data Science</option>
+        <option value="IoT">IoT</option>
+        <option value="EEE">EEE</option>
+        <option value="ECE">ECE</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="Result" placeholder="Enter Your CGPA"></textarea>
+        <br>
+        <br>
+        <input type="Reset" value="Reset">
+        <input type="Submit"value="Submit">
+    </fieldset>
+    </form>
+</body>
+</html>
