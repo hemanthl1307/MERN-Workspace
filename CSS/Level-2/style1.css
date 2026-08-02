@@ -1,0 +1,131 @@
+/*!Important:used to fix the css property which cannot be changed anytime even by inline*/
+h1{
+    color:#B92B27 !important;
+}
+/* 1. Universal selector */
+*{
+    background-color: rgb(210, 254, 239);
+    font-family: 'Times New Roman', Times, serif;
+}
+/*2.Element selector*/
+/* h3{
+    color:purple;
+} */
+h1,h3{
+    color:#B92B27;
+}
+/*3.ID selector*/
+#login{
+    background-color: white;
+    color:#B92B27;
+}
+#signup{
+    background-color: #B92B27;
+    color:white;
+}
+/* 4.class selector */
+.upvote{
+    color:white;
+    background-color: blue;
+}
+/* 5.decendent selector:
+decendent selector is used to selector whic comes after a  selector
+ex:
+<div>
+<p>
+<h1></h1>
+</p>
+</div> 
+here p,and h1 are decendents of div */
+li a{
+    background-color: blanchedalmond;
+    text-decoration: none;
+}
+nav ul li{
+    color:red;
+}
+/*In decendent selector we can skip multiple level like we can directly write nav li{....} still works but for child combinator 
+it does not work always need to choose the next level after particular element*/
+.post a{
+    color:purple;
+    background-color: yellow;
+}
+/* 6.Adjacent sibling combinator
+this is used to select the next(adjacent) sibling which comes just after the element using combinator such as(+,*..etc)
+Ex:
+<p>
+<h3>
+<span>
+<div><h3></h3></div>
+here p and h3 are sibling for which this property can be applied
+whereas for div and h3 we can't apply as they posses parent child relationship*/
+
+p+h3{
+    text-decoration: red underline;
+}
+.upvote+button{
+    color:black;
+    background-color: gold;
+}
+/* 7.child combinator
+sets the property for direct child of a parent 
+ex:
+<p>
+<h3>
+<ul>
+<li> 
+here h3 is direct child of p so when we use child combinator only h3 gets CSS property whereas ul is 
+direct child of h3 amd li is direct child of ul */
+div > input{
+    background-color: aquamarine;
+}
+/*Input should directly come after div*/
+/*8.Attribute selector*/
+input[type="text"]
+{
+    color:blue;
+}
+input[type="password"]
+{
+    color:red;
+}
+/*9.Pseudo class*/
+button:hover{
+    background-color: black;
+    color:white;
+}
+/*Hover is when the cursor is placed on mouse*/
+h3:hover{
+    color: blue;
+    text-decoration: aqua wavy underline;
+}
+/*active is when the button is clicked*/
+button:active{
+    background-color: hotpink;
+    color:black;
+}
+input[type="radio"]:checked+label
+{
+    color:red;
+    font-weight: 900;
+}
+div:nth-of-type(2n)
+{
+    background-color: bisque;
+}
+/*adds the CSS property for nth values */
+/*1.Pseudo Element*/
+h1::first-letter{
+    color:black;
+}
+/*applies property to first letter*/
+p::first-line{
+    color:blue;
+}
+/*applies property to first line*/
+p::selection
+{
+    background-color: black;
+    color:white;
+}
+/*applies only after selecting the particular element*/

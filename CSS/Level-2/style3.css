@@ -1,0 +1,27 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+h1{
+    color:#1B74E4;
+}
+#searchbtn
+{
+    color:white;
+    background-color: black;
+}
+.userbtn
+{
+    background-color: aqua;
+}
+#myId p{
+    color:red;
+}
+h1{
+    color:pink;
+}
+#greet{
+    color:yellow;
+}
+.myClass{
+    color:brown;
+}

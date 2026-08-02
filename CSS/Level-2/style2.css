@@ -1,0 +1,15 @@
+div{
+    background-color: yellow;
+}
+/* form{
+    background-color: blue;
+} */
+input{
+    background-color: inherit;
+}
+button{
+    background-color: inherit;
+}
+/*here due to inheritance if we set the color of div to yellow then all the elements inside inherit its property and 
+get yellow color 
+but for input and button we need to specifically need to write inherit to get the inheritance*/
