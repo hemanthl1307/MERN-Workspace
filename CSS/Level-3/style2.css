@@ -1,0 +1,25 @@
+h1{
+    display:inline;
+    background-color: blue;
+}
+/* h1 is an block element but when set to inline behaves as inline element*/
+span{
+    display:block;
+    background-color: aqua;
+}
+/* span is an inline element but when set to block behaves as block element*/
+div{
+    height:200px;
+    width:200px;
+    background-color: blue;
+    border:2px solid black;
+    margin:15px;
+    display:inline-block;
+}
+/* initially div was block now after setting inline-block it acts acts inline only so all div line up horizontally
+use inline block so that height,width margin and padding will remain as it is 
+wheras when display is inline for block element margin and padding wo'nt apply for particular sides*/
+#one{
+    display:none;   
+}
+/* display none removes it from webpage won't be visible at all completely removed */

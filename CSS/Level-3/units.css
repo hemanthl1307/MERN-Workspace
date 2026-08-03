@@ -1,0 +1,76 @@
+h1{
+    background-color: bisque;
+    border:2px solid black;
+    width:33.33%;
+}
+#one{
+    height:400px;
+    width:400px;
+    background-color: blue;
+    margin:50px;
+}
+#two{
+    height:30%;
+    width:30%;
+    background-color: aqua;
+    margin:10%;
+}
+/* so when we set height and width as 30% it is relative to its parent width and height i.e
+30% of 400px gives 30/100*400=120 hence the width and height will be 120px also margin we wrote 10% hence it will be 10% of 50px 
+which is 10/100*400=40px
+Remember:
+width:based on parent width
+height:based on parent height
+margin:based on parent width not on margins parent
+padding:based on parent width not on padding of parent*/
+#box1{
+    height:400px;
+    width:400px;
+    background-color:green;
+    margin:50px;
+    font-size:20px;
+}
+#box2{
+    height:100px;
+    width:100px;
+    background-color:yellow;
+    font-size:2em; /*2*20px=40px*/
+     padding:1em; /*40px */
+    /*The font size is now 2times the parent font i.e outer div font-size was 20px now 2em means 2*20px=40px
+    Important:when we set padding:1em it is not relative according to parent it depends on the font-size value
+    so the padding will be set to 40px because padding depends on font-size value which is equal to 40px which is relative 
+    to the font size of parent
+    font-size:based on parent font-size
+    width:based on  itself
+    padding:based on itself
+    margin:based on itself*/
+}
+button{
+    font-size:50px;
+    border:4px solid black;
+    border-radius:15px;
+    padding-left:0.5em;
+    padding-right:0.5em;
+}
+/* now if the button font-size changes to 10px or 100px also the padding will be relative to its font-size 
+i.e changes according to that this method are used in responsive websites 
+just change the font-size value and see! like 10px or 100px to understand more*/
+
+/* disadvantage of em is it causes snowball effect EX:*/
+#section1{
+    font-size:15px;
+}
+.emdiv{
+    font-size:2em;
+}
+/* here each div font-size  gets increasing bigger because they depend on parent 
+like div3 size depends on div2 then div1 then section whose size gets increas *2 each time  because of this we use Rem*/
+
+/* em--->parent/itself
+Rem--->Root element */
+#section2{
+    font-size:15px;
+}
+.remdiv{
+    font-size:2rem;
+}

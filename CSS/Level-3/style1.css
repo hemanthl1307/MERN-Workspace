@@ -1,0 +1,43 @@
+div{
+    height:200px;
+    width:500px;
+    background-color: pink;
+    border-width:2px;
+    border-style:solid;
+    border-color:red;
+    /* border-left-width:5px;
+    border-left-style:dashed;
+    border-left-color:blue; */
+    /* border-bottom: 5px dashed blue; */
+    border-radius:20px;
+    padding-top:50px;
+    padding-left:30px;
+    padding-right:40px;
+    margin-bottom: 40px;
+    margin-left:40px;
+    margin-top:20px;
+}
+h1{
+    border-width:2px;
+    border-style:dashed;
+    border-color:blue;
+    /* border shorthand */
+    border:2px dashed blue;
+    border-top-left-radius:30px; 
+    background-color: aquamarine;
+}
+/* a perfect circle */
+#one{
+    height:100px;
+    width:100px;
+    background-color: red;
+    border-radius:50%;
+}
+button{
+    background-color: aqua;
+    border:2px solid blue;
+    border-radius:10px;
+    padding-left:20px;
+    padding-right:20px;
+    margin:20px 20px 20px 20px;
+}
