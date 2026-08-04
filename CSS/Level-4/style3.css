@@ -1,0 +1,14 @@
+#bgdiv{
+    width:800px;
+    height:600px;
+    background-color: #7aa847;
+    margin:0 auto;
+    background-image: url("moon.jpeg");
+    background-size:cover;
+    color:white;
+    text-align:center;
+    font-size: 60px;
+}
+/*contain-->no crop,no scale only the image repeats
+cover-->images gets croped but not scaled
+auto-->the image stretches according to the space (expands)*/

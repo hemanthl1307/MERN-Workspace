@@ -1,0 +1,43 @@
+section{
+    margin-top:100px;
+}
+div{
+    width:200px;
+    height:50px;
+    text-align:center;
+    background-color: #7aa845;
+    border:2px solid black;
+     margin:10px auto; /*using margin:auto make the element to the center of the page*/
+}
+div:nth-of-type(2n)
+{
+    background-color:#f7db6a;
+}
+div:nth-of-type(3n)
+{
+    background-color: #ebb02d;;
+}
+/* 1.rotate-->rotates the element by certain degree */
+#one{
+    transform:rotate(45deg);
+}
+/* 2.transform-->changes the element size(height and width) into smaller or larger scale value */
+#two{
+    /* transform:scale(0.5); */
+    transform:scaleX(0.5);
+    /* transform:scaleY(2); */
+}
+/* 3.translate-->moves the element by X or Y axis only works for 2-D & does not work for 3-D */
+#three{
+    /* transform:translate(100px,100px); */
+    transform:translateX(-100px);
+    /* transform:translateY(100px);*/
+}
+/* 4.skew--->make the element kind of cross vertical(diamond/skew shaped) */
+#four{
+    transform:skew(-45deg);
+}
+/* can use two or more at a time */
+#five{
+    transform:rotate(-90deg) scale(0.5);
+}

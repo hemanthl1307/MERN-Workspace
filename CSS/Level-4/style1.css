@@ -1,0 +1,40 @@
+div{
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    font-size:20px;
+    margin:50px;
+    display:inline-block;
+}
+#alpha1{
+    background-color:rgba(255,0,0,0);
+}
+#alpha2{
+    background-color:rgba(255,0,0,0.25);
+}
+#alpha3{
+    background-color:#ff0000af;
+}
+#alpha4{
+    background-color:rgba(255,0,0,1);
+}
+#opacity1{
+    background-color: red;
+    opacity:0;
+}
+/*when opacity is set to zero noting will be visible including the content also
+but alpha channel is color based even with aplha value 0 still content will be visible*/
+#opacity2{
+    background-color: red;
+    opacity:0.25;
+}
+#opacity3{
+    background-color: red;
+    opacity:0.5;
+}
+#opacity4{
+    background-color: red;
+    opacity:1;
+}
+/* aplha---> visibility of color
+opacity--->visibility of whole object including content */

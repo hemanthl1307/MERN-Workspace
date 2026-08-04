@@ -1,0 +1,28 @@
+div{
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    text-align: center;
+    font-size:20px;
+}
+#one{
+    transition-duration:1s;
+    transition-delay:1s;
+    transition-timing-function:steps(2);
+    /* there are mainly linear,ease-in,ease-out,steps,cubic transition timing fucntion */
+}
+#one:hover{
+    background-color:red;
+    color:white;
+    border-radius:50%;
+}
+#two{
+    margin:0 auto;
+    margin-top:10px;
+    /* transition shortform */
+    transition:margin-top 2s ease-in 0.2s;
+}
+#two:hover{
+    margin-top:400px;
+    background-color: blue;
+}
