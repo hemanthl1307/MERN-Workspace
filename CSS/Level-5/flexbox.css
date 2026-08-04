@@ -1,0 +1,44 @@
+body{
+    text-align:center;
+}
+div{
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    display:inline-block;
+}
+#container{
+    width:500px;
+    height:500px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    /* align-content:center; */
+}
+#box1{
+    background-color: aqua;
+}
+#box2{
+    background-color: pink;
+    height:200px;
+    /* align-self:flex-end; */
+}
+#box3{
+ background-color: red;
+ /* font-size:15px; */
+ /* flex-shrink:0.5; */
+}
+#box3{
+    background-color: blueviolet;
+    height:75px;
+}
+#box4{
+    background-color: rgb(19, 186, 44);
+}
+#box5{
+    background-color: yellow;
+}
+#box6{
+    background-color: violet;
+}

@@ -1,0 +1,70 @@
+#container{
+    height:500px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;
+    /* 1.flex-direction */
+    flex-direction:row;
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse;  */
+    /* 2.justify content */
+    justify-content: flex-start;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* 3.flex-wrap*/
+    /* flex-wrap:nowrap; */
+    /* flex-wrap:wrap; */
+    /* flex-wrap:wrap-reverse; */
+    /* 4.align-item */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: baseline; */
+    /* baseline-->works based on content base cross axis(line) i.e when there are different sizes of div one small and 
+    one big and even content vary in size if we use baseline we can observe that all content(text) align in same line */
+    /* 5.align-content */
+    align-content: flex-start;
+    /* align-content:flex-end; */
+    /* align-content:center; */
+    /* align-content:space-around; */
+    /* align-content:space-between; */
+    /* align-content:space-evenly; */
+    /* 6.align-self*/
+    /* align-self ---->works on individial items */
+}
+#yel{
+    align-self:flex-start;
+/* 7.Flex-sizing */
+/* flex-basis--->sets the initial main size of flex item */
+/* flex-basis:20px; */
+/* flex-grow:2; */
+/* flex-shrink:3;
+flex shorthand
+1. flex-grow | flex-shrink | flex-basis:  */
+flex: 2 2 100px;
+/* 2.flex-grow | flex-basis
+flex:2 100px; */
+
+}
+#org{
+    flex-grow:3;
+    /*max-width:245px; */
+    /* max-width -->means maximum width should be only these much and any property given will not exceed more than this width */
+    /* flex-shrink:4; */
+}
+h1{
+    text-align:center;
+}
+#container div{
+    height:100px;
+    width:150px;
+    color:white;
+    font-size:1.5em;
+    text-align:center;
+}
