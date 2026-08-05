@@ -1,0 +1,25 @@
+#loader{
+    height:100px;
+    width:100px;
+    position:relative;
+    top:200px;
+    left:200px;
+    border:10px solid #d5e1e1;
+    border-top:10px solid #1103A8;
+    border-radius:50%;
+    animation-name:spin;
+    animation-duration:1s;
+    animation-delay:0;
+    animation-iteration-count:infinite;
+}
+h1{
+    text-align:center;
+}
+@keyframes spin{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}

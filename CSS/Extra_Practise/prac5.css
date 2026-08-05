@@ -1,0 +1,20 @@
+#nature{
+    height:200px;
+    width:200px;
+    background:2px solid black;
+    color:white;
+    text-align:center;
+    background-image: url(nature.jpg);
+    background-size: cover;
+    position:fixed;
+    /* when we use ---position:absolute--- in place of fixed the image will come 
+    on right side but the image will be displayed on top of text and when we scroll 
+    the image also srolls along with text*/
+
+    /*when we use ---position:fixed-----the the image will come 
+    on right side but the image also will  displayed on top of text 
+    but (div or image does not move when we scroll)*/
+    top:20px;
+    right:0px;
+
+}
