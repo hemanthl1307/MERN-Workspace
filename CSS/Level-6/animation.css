@@ -1,0 +1,68 @@
+#box{
+    height:200px;
+    width:200px;
+    background-color: pink;
+    border:2px solid black;
+    border-radius:50%;
+    position:relative;
+    top:200px;
+    left:200px;
+    text-align:center;
+    animation-name:Myanimate;
+    animation-duration:3s;
+    /* animation-timing-function:ease-in; */
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+#box1{
+    width:300px;
+    height:200px;
+    background-color: bisque;
+    font-size:20px;
+    border:2px solid black;
+    margin:50px;
+    text-align:center;
+    /* animation-name: Boxanimate;
+    animation-duration: 2s;
+    animation-delay:0;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+    /* shortcut */
+    /* animation: name duration TF delay count direction; */
+    animation:Boxanimate 2s ease 0s infinite normal;
+}
+@keyframes Boxanimate{
+    from{
+        font-size:20px;
+        background-color:red;
+        color:white;
+        height:20px;
+    }
+    to{
+        font-size:80px;
+        height:200px;
+        background-color: aqua;
+        color:blue;
+    }
+}
+@keyframes Myanimate{
+    0%{
+        left:0px;
+        background-color:red;
+    }
+    25%{
+        background-color:yellow;
+    }
+    50%{
+        background-color:violet;
+    }
+    75%{
+        background-color: blue;
+    }
+    100%{
+        right:200px;
+        background-color: blue;
+    }
+}
