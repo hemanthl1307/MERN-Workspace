@@ -1,0 +1,16 @@
+/* body{
+    background-image: url(mount_photo.jpg);
+    background-size:cover;
+} */
+ body{
+    background-color: rgb(174, 100, 113);
+ }
+#box1{
+    height:250px;
+    width:250px;
+    background-color: rgb(220, 132, 26);
+    border: 2px solid black;
+    margin-left:50px;
+    background-image:url(mount_photo.jpg);
+    background-size:cover;
+}
