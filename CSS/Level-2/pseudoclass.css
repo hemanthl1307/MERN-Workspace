@@ -1,0 +1,27 @@
+div{
+    height:200px;
+    width:200px;
+    background-color: aqua;
+    color:black;
+    border:2px solid black;
+    text-align:center;
+}
+div:focus {
+  background-color: lightblue;
+  border: 20px solid blue;
+}
+div:active{
+    background-color: blueviolet;
+}
+div:hover{
+    background-color: red;
+}
+input:focus-within{
+    background-color:pink;
+}
+#box:target{
+    background-color:lightgreen;
+}
+a:visited{
+    background-color: purple;
+}
