@@ -1,0 +1,28 @@
+*{
+    padding:0;
+    margin:0;
+}
+#outer{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:60px;
+    background:#0f1111;
+}
+#logo{
+    font-size: 25px;
+    color: #f08804;
+}
+a{
+    font-size:normal;
+    color: white;
+    margin-right:200px;
+}
+button{
+    color: white;
+    background-color: #f08804;    
+}
+label{
+    color: white;
+}
