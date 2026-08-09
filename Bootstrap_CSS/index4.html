@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-CSS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body>
+     <form>
+    <div class="container">
+        <div class="row">
+        <div class="mb-3 col-md-6">
+            <label class="form-label" for="name">Name:</label>
+            <input class="form-control" name="name" id="name" placeholder="Name">
+        </div>
+        <div class="mb-3 col-md-6">
+            <label class="form-label" for="email">Email:</label>
+            <input class="form-control" name="email" id="email" placeholder="Email">
+        </div>
+        </div>
+        <div class="row">
+        <div class="mb-3 col-md-6">
+            <label class="form-label" for="pass">Password:</label>
+            <input class=" form-control form-control-lg" name="pass" id="pass" placeholder="Password">
+        </div>
+        <div class="mb-3 col-md-6">
+            <label class="form-label" for="phone">Phone:</label>
+            <input class=" form-control form-control-lg" name="phone" id="phone" placeholder="Phone">
+        </div>
+        </div>
+        <div class="mb-3">
+        <select class="form-select bg-info">
+            <option value="1" selected>Choose your color</option>
+            <option value="2">Red</option>
+            <option value="3">Green</option>
+            <option value="4">Blue</option>
+        </select>
+        </div>
+        <div class="mb-3">
+        <input type="checkbox" id="agree1">    
+        <label for="agree1">Agree</label>
+        </div>
+        <div class=" form-check mb-3">
+            <input type="checkbox" id="agree" class="form-check-input">
+            <label for="agree" class="form-check-label">Agree</label>
+        </div>
+        <div class=" form-check mb-3">
+        <label for="Gender" class="form-check-label">Male</label>
+        <input type="radio" value="Male" id="male" name="Gender" class="form-check-input">
+        </div>
+         <div class=" form-check mb-3">
+        <label for="Gender" class="fom-check-label">Female</label>
+        <input type="radio" value="Female" id="female" name="Gender" class="form-check-input">
+        </div>
+        <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+        <label class="form-check-label" for="switchCheckDefault">Switch</label>
+        </div>
+    </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>    
