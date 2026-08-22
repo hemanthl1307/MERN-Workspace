@@ -1,0 +1,38 @@
+let para1=document.createElement('p');
+para1.innerText="Hey I'm red";
+para1.classList.add("mainpara");
+let ele=document.querySelector(".container");
+ele.prepend(para1);
+let h3=document.createElement('h3');
+h3.innerText="I'am a blue h3";
+h3.style.color="blue";
+ele.prepend(h3);
+let div=document.createElement('div');
+div.style.backgroundColor="pink";
+ele.prepend(div);
+div.style.border="1px solid black";
+let divh1=document.createElement('h1');
+divh1.innerText="I'am in a div";
+div.prepend(divh1);
+let divp=document.createElement('p');
+divp.innerText="ME TOO!";
+div.prepend(divp);
+console.log(document.querySelector('.container'));
+let input=document.createElement('input');
+let btn=document.createElement('button');
+btn.innerText="Click Me"
+document.querySelector('body').append(input,btn);
+input.setAttribute('placeholder','username');
+btn.setAttribute('id','btn');
+console.log(btn);
+console.log(btn.getAttribute('id'));
+btn.classList.add('btnstyle');
+let newhead=document.createElement('h1');
+newhead.innerText="DOM Practise";
+newhead.classList.add('newhead');
+newhead.style.color="purple";
+document.querySelector('body').append(newhead);
+let newp=document.createElement('p');
+newp.innerHTML="Apna College<b> Delta </b>Practice";
+document.querySelector('body').append(newp);
+
