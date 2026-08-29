@@ -253,3 +253,88 @@ changecolor("red",1000).then(()=>{
 .catch(()=>{
     console.log("error changing color");
 });
+//--------------------async and await----------------
+//normal function
+function hello()
+{
+    return "hello";
+}
+console.log(hello());
+//async function
+async function sayhello()
+{
+    return "hello";
+}
+//this prints a promise
+console.log(sayhello());
+//the above code prints the value when the promise is fulfilled
+sayhello().then((result)=>{
+    console.log(result);
+});
+async function print()
+{
+    let a=10;
+    console.log(a);
+}
+let result=print();
+console.log(result);
+async function greet()
+{
+    throw("404 page not found");
+    return "hello world";
+}
+greet()
+.then((result)=>{
+    console.log("promise accepted");
+    console.log("greeting is:",result);
+})
+.catch((err)=>{
+    console.log("promise rejected",err);
+});
+//we can even make arrow fucntion also async
+let num=async (n)=>{
+    return n;
+}
+console.log(num(5));
+num(5).then((r)=>{
+    console.log(r);
+})
+//-----------------await method------------
+function getNum()
+{
+    return new Promise((resolve,reject)=>
+    {
+        setTimeout(()=>{
+            let num=Math.floor(Math.random()*10)+1
+            if(num>5)
+            {
+                reject("error:number is greater than 5");
+            }else{
+            console.log(num);
+            resolve("success:number is less than 5");
+            }
+        },1000);
+    });
+}
+async function demo()
+{
+try{
+await getNum();
+await getNum();
+await getNum();
+await getNum();
+await getNum();
+await getNum();
+}
+catch(err){
+    console.log("error caught in promise");
+}
+let name="Hemanth";
+console.log(name);
+}
+demo().then((result)=>{
+    console.log(result);
+})
+.catch((err)=>{
+    console.log(err);
+})
