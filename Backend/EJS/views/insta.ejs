@@ -1,0 +1,17 @@
+<%-include("includes/head.ejs")%>
+<body>
+    <h1>Welcome @<%=data.name%></h1>
+    <button>LogIn</button>
+    <button>SignUp</button>
+    <p>Followers:<%=data.followers%></p>
+    <p>Following:<%=data.following%></p>
+    <hr>
+    <% for(let post of data.posts){ %>
+        <img src="<%= post.image%>" alt="Images">
+        <h3>Likes:<%=post.likes%></h3>
+        <h3>Comments:<%=post.comments%></h3>
+    <%}%>
+
+    <%-include("includes/footer.ejs") %>
+</body>
+</html>
