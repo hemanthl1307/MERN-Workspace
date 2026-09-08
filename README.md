@@ -56,10 +56,14 @@ MERN-workspace/
 
 * [x] HTML
 * [x] CSS
-* [ ] JavaScript
+* [x] Bootstrap CSS
+* [ ] Tailwind CSS
+* [x] JavaScript
+* [x] EJS
 * [ ] React.js
-* [ ] Node.js
-* [ ] Express.js
+* [x] Node.js
+* [x] Express.js
+* [ ] SQL
 * [ ] MongoDB
 * [ ] Full Stack Projects
 
