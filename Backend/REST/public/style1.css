@@ -1,0 +1,35 @@
+body{
+    min-height: 100vh;
+    background-color:antiquewhite;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#postform{
+    height:200px;
+    width:250px;
+    margin:10px;
+    border:1px solid red;
+    border-radius: 10px;
+    background-color: rgb(255, 148, 189);
+    padding: 40px;
+}
+#username{
+    height:20px;
+    width:240px;
+    border-radius:3px;
+    border:none;
+}
+#content{
+    height:100px;
+    width:240px;
+    border-radius:3px;
+    border:none;
+}
+button{
+    height:40px;
+    width:100px;
+    color:red;
+    background-color:pink;
+    border:1px solid red;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Blog Page</h1>
+    <center>
+    <a href="http://localhost:8080/posts/new">Create new Post</a>
+    </center>
+    <div class="container">
+    <% for(let post of posts) { %>
+        <div class="box">
+            <h3 class="user">Username: @<%=post.username%></h3>
+            <h4 class="content"><%=post.content%></h4>
+        </div>
+    <%}%>
+    </div>
+</body>
+</html>
