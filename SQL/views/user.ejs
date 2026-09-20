@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <style>
+        h1{
+            color:brown;
+        }
+        h2{
+            color:black;
+        }
+        body{
+            background-color: bisque;
+        }
+        table,tr,td,th{
+            background-color: aliceblue;
+           border: 1px solid black;
+        }
+        tr,td,th{
+            padding:10px;
+        }
+        th{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>User Information</h1>
+    <h2>New User? Register here <a href="/user/new"><button>Register</button></a></h2>
+     <% let i = 0; %>
+    <table>
+        <tr>
+        <th>SL.No</th>
+        <th>Id</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        </tr>
+           <% for(let user of users) {%>
+              <tr></tr>
+            <td><%= i=i + 1 %></td> 
+            <td><%=user.id%></td>
+            <td><%=user.username%></td>
+            <td><%=user.email%></td>
+            <td>
+                <form method="GET" action="/user/<%=user.id%>/edit">
+                    <button>Edit Username</button>
+                </form>
+            </td>
+            <td>
+                <form method="GET" action="/user/<%=user.id%>/delete">
+                    <button>Delete User</button>
+                </form>
+            </td>
+            </tr>
+            <%}%>
+    </table>
+    </center>
+</body>
+</html>
