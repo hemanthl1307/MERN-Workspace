@@ -1,0 +1,47 @@
+body{
+    margin:10px;
+}
+.outerbox{
+     min-height:100vh;
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+#msg{
+    background-color:rgb(40, 4, 242);
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+}
+.box{
+    height:250px;
+    width:400px;
+    background-color:rgb(208, 208, 255);
+    color:rgb(0, 0, 255);
+    margin:20px;
+    padding:10px;
+    border-radius:10px;
+}
+.message-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.buttons form {
+    margin: 0;
+}
+.btn{
+    background-color: blue;
+    color:white;
+    border:1px solid white;
+    border-radius:5px;
+    padding:7px;
+}
+.edit{
+     margin-left:10px;
+}
