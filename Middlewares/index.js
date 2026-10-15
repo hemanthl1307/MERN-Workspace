@@ -46,6 +46,10 @@ app.get("/err",(req,res)=>{
     abcd=abcd;
 });
 
+app.get("/admin",(req,res)=>{
+    throw new ExpressError(403,"Access denied");
+});
+
 app.use((err,req,res,next)=>{
     let { status, message } = err;
     res.status(status).send(message);
