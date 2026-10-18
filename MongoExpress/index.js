@@ -56,8 +56,13 @@ app.get("/chats/new",(req,res,next)=>{
     }
 });
 
-app.post("/chats",async (req,res,next)=>{
-    try{
+function wrapAsync(fn){
+    return function(req,res,next){
+        fn(req,res,next).catch((err)=>next(err));
+}
+}
+
+app.post("/chats",wrapAsync(async (req,res,next)=>{
         let{from,to,msg}=req.body;
     const newchat=new Chat({
         from:from,
@@ -75,18 +80,12 @@ app.post("/chats",async (req,res,next)=>{
     // });
 
     res.redirect("/chats");
-    }
-
-    catch(err){
-        next(err);
-    }
-});
+}));
 
 
 
 //update/edit  chat
-app.get("/chats/:id/edit",async (req,res,next)=>{
-    try{
+app.get("/chats/:id/edit", wrapAsync(async (req,res,next)=>{
         let{id}=req.params;
     let chat=await Chat.findById(id)
     if(!chat){
@@ -94,11 +93,7 @@ app.get("/chats/:id/edit",async (req,res,next)=>{
         return next(new ExpressError(404,"Sorry Page not found"));
     }
     res.render("edit.ejs",{chat});
-    }
-    catch(err){
-        next(err);
-    }
-});
+}));
 
 app.put("/chats/:id",async (req,res,next)=>{
     try{
@@ -113,6 +108,19 @@ app.put("/chats/:id",async (req,res,next)=>{
     }
 });
 //delete chat
+const handleVE=(err)=>{
+    console.log("Validation Error has occured!");
+    console.log(err.message);
+    return err;
+};
+
+app.use((err,req,res,next)=>{
+    console.log(err.name);
+    if(err.name==="ValidationError"){
+        err=handleVE;
+    }
+    next(err);
+});
 
 app.use((err,req,res,next)=>{
     try{
@@ -124,15 +132,10 @@ app.use((err,req,res,next)=>{
     }
 });
 
-app.delete("/chats/:id",async (req,res,next)=>{
-    try{
+app.delete("/chats/:id",wrapAsync(async (req,res,next)=>{
         let {id}=req.params;
     let delchat=await Chat.findByIdAndDelete(id);
     console.log(delchat);
     res.redirect("/chats");
-    }
-    catch(err){
-        next(err);
-    }
-});
+}));
 
