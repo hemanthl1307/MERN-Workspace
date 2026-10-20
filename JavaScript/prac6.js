@@ -66,7 +66,7 @@ const object={
 };
 object.method(callback,1,2);
 //here mathod is a name like add(callback) etc don't get confuse with names!
-//When a function is called as `object.method()`, `this` inside `method` refers to 
+//When a function is called as object.method(), `this` inside `method` refers to 
 // `object`. But when `method` calls another normal function simply as `callback()`, `this`
 //  inside `callback` does not remain `object`; in a browser it refers to `window`. Also, 
 // `let length = 4` is a separate variable, so `this.length` does not refer to that `4`.

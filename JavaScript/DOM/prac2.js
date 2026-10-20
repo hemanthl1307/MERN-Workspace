@@ -24,4 +24,4 @@ let h2=document.querySelector("h2");
 inputbox.addEventListener("input",()=>{
     inputbox.value=inputbox.value.replace(/[^a-zA-Z ]/g, "");
     h2.innerText=inputbox.value;
-})
+});

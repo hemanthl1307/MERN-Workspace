@@ -63,8 +63,8 @@ MERN-workspace/
 * [ ] React.js
 * [x] Node.js
 * [x] Express.js
-* [ ] SQL
-* [ ] MongoDB
+* [x] SQL
+* [x] MongoDB
 * [ ] Full Stack Projects
 
 ---

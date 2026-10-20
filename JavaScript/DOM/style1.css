@@ -8,3 +8,17 @@
 .newhead{
     text-decoration:underline;
 }
+.btn1{
+    background-color: red;
+    color:white;
+}
+.btn{
+    background-color: black;
+    color:gold;
+}
+.box{
+    height:100px;
+    width:100px;
+    background-color:red;
+    border:1px solid black;
+}
