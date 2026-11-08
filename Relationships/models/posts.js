@@ -46,26 +46,32 @@ const Post=new mongoose.model("Post",PostSchema);
 
 // addData();
 
-const addData=async()=>{
-    let user1=await User.findOne({name:"Hemanth L"});
-    let post2=new Post({
-        content:"It's fun to learn MERN",
-        likes:70,
-    });
-    let post3=new Post({
-        content:"Hello World!",
-        likes:50,
-    });
-    let post4=new Post({
-        content:"Its good to do yoga!",
-        likes:700,
-    });
-    post2.user=user1;
-    post3.user=user1;
-    post4.user=user1;
-    await post2.save();
-    await post3.save();
-    await post4.save();
-};
+// const addData=async()=>{
+//     let user1=await User.findOne({name:"Hemanth L"});
+//     let post2=new Post({
+//         content:"It's fun to learn MERN",
+//         likes:70,
+//     });
+//     let post3=new Post({
+//         content:"Hello World!",
+//         likes:50,
+//     });
+//     let post4=new Post({
+//         content:"Its good to do yoga!",
+//         likes:700,
+//     });
+//     post2.user=user1;
+//     post3.user=user1;
+//     post4.user=user1;
+//     await post2.save();
+//     await post3.save();
+//     await post4.save();
+// };
 
-addData();
+// addData();
+
+const getdata=async()=>{
+    let res=await Post.findOne({}).populate("user","email");
+    console.log(res);
+}
+getdata();
